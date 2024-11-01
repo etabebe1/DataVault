@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.24;
 
 contract DataStorage {
     uint256 public myNumber;
@@ -18,7 +18,7 @@ contract DataStorage {
         usernameToUsernumber[_username] = _usernumber;
     }
 
-    function storeNumber (uint256 _number) public  {
+    function storeNumber (uint256 _number) public virtual  {
         myNumber = _number;
     }
 
